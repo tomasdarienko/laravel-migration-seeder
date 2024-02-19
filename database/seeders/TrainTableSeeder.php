@@ -9,6 +9,7 @@ use App\Models\train ;
 
 use Faker\Generator as Faker;
 
+
 class TrainTableSeeder extends Seeder
 {
     /**

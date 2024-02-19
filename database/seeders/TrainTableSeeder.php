@@ -24,7 +24,7 @@ class TrainTableSeeder extends Seeder
         $train->azienda = $faker->company();
         $train->stazPartenza = $faker->city();
         $train->stazArrivo = $faker->city();
-        $train->orarioPartenza = $faker->dateTime();
+        $train->orarioPartenza = $faker->dateTimeBetween("-3 days","+3 days");
         $train->orarioArrivo = $faker->dateTime();
         $train->codice = $faker->randomNumber (4, true);
         $train->carrozze = $faker->randomDigit();

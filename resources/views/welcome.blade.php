@@ -43,11 +43,12 @@
                                 <td>{{ $train->id}}</td>
                                 <td>{{ $train->stazPartenza}}</td>
                                 <td>{{ $train->stazArrivo}}</td>
-                                <td>{{ $train->idcodice}}</td>
+                                <td>{{ $train->orarioPartenza}}</td>
+                                <td>{{ $train->orarioArrivo}}</td>
+                                <td>{{ $train->codice}}</td>
                                 <td>{{ $train->carrozze}}</td>
-                                <td>{{ $train->orario}}</td>
-                                <td>{{ $train->cancellato}}</td>
-                                
+                                <td>{{ $train->orario ? 'si' : 'no'}}</td>
+                                <td>{{ $train->cancellato ? 'si' : 'no'}}</td>
                             </tr>
                             @endforeach
                         </tbody>
